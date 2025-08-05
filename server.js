@@ -6,7 +6,8 @@ app.use(cors());
 app.use(express.json());
 app.get('/pro', async (req, res) => {
 console.log("hi bro");
-}
+res.send("Hello from /pro route!");
+});
 app.post('/proxy', async (req, res) => {
   const { host, port, username, password, url } = req.body;
   if (!host || !port || !username || !password || !url) {

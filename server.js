@@ -3,7 +3,9 @@ const fetch = require('node-fetch'); // npm i node-fetch@2
 const app = express();
 
 app.use(express.json());
-
+pp.get('/pro', async (req, res) => {
+console.log("hi bro");
+}
 app.post('/proxy', async (req, res) => {
   const { host, port, username, password, url } = req.body;
   if (!host || !port || !username || !password || !url) {

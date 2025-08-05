@@ -1,7 +1,8 @@
 const express = require('express');
 const fetch = require('node-fetch'); // npm i node-fetch@2
 const app = express();
-
+const cors = require('cors');
+app.use(cors());
 app.use(express.json());
 pp.get('/pro', async (req, res) => {
 console.log("hi bro");

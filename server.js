@@ -4,7 +4,7 @@ const app = express();
 const cors = require('cors');
 app.use(cors());
 app.use(express.json());
-pp.get('/pro', async (req, res) => {
+app.get('/pro', async (req, res) => {
 console.log("hi bro");
 }
 app.post('/proxy', async (req, res) => {
